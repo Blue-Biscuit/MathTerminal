@@ -18,5 +18,15 @@ namespace mterminal {
  */
 typedef double num_t;
 
+/**
+ * @brief Unsigned integer type.
+ */
+typedef unsigned int uint_t;
+
+/**
+ * @brief Integer type.
+ */
+typedef int int_t;
+
 
 }

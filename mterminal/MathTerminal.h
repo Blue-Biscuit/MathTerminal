@@ -13,3 +13,6 @@
 #include "solution/SolutionType.h"
 #include "solution/ISolvable.h"
 #include "solution/Solution.h"
+
+// Fraction module.
+#include "fraction/Fraction.h"
