@@ -2,11 +2,12 @@
 
 #include "../globals/Definitions.h"
 #include "../globals/IStringable.h"
+#include "../solution/ISolvable.h"
 
 namespace mterminal {
 
 
-class Fraction : public IStringable {
+class Fraction : public IStringable, public ISolvable {
 public:
     /**
      * @brief Construct a new Fraction object
@@ -61,6 +62,8 @@ public:
     void setDenominator(uint_t denominator) noexcept;
 
     std::string str() const noexcept override;
+
+    Solution solve() const noexcept override;
 
 private:
     bool _positive;

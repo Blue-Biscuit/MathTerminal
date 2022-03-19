@@ -37,7 +37,15 @@ void Fraction::setDenominator(uint_t denominator) noexcept {
     _denominator = denominator;
 }
 
-
+Solution Fraction::solve() const noexcept {
+    if (_denominator == 0) {
+        return Solution(0.0, SolutionType::undefined);
+    }
+    else {
+        num_t result = (_positive ? 1 : -1) * ((num_t)_numerator) / _denominator;
+        return Solution(result);
+    }
+}
 
 
 
