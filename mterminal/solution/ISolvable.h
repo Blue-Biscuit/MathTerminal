@@ -10,7 +10,9 @@ namespace mterminal {
  * 
  */
 class ISolvable {
+    public:
     virtual Solution solve() const noexcept = 0;
 };
+
 
 }
